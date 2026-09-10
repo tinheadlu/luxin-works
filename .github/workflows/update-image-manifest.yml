@@ -29,14 +29,16 @@ jobs:
               'ceramics': root / 'images' / 'ceramics',
               'felt': root / 'images' / 'felt',
               'painting': root / 'images' / 'painting',
+              'sketches': root / 'images' / 'sketches',
           }
-          allowed = {'.jpg', '.jpeg', '.png', '.webp'}
+          allowed = {'.jpg', '.jpeg', '.png', '.webp', '.gif', '.avif'}
 
           def natural_key(path):
               return [int(x) if x.isdigit() else x.lower() for x in re.split(r'(\d+)', path.name)]
 
           data = {}
           for name, folder in groups.items():
+              folder.mkdir(parents=True, exist_ok=True)
               files = [p for p in folder.iterdir() if p.is_file() and p.suffix.lower() in allowed]
               files.sort(key=natural_key)
               data[name] = [p.as_posix() for p in files]
