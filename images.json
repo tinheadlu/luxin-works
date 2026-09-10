@@ -44,5 +44,19 @@
     "images/painting/oilpaint002.JPG",
     "images/painting/oilpaint003.JPG",
     "images/painting/oilpaint004.JPG"
+  ],
+  "sketches": [
+    "images/sketches/paint001.jpg",
+    "images/sketches/paint002.jpg",
+    "images/sketches/paint003.jpg",
+    "images/sketches/paint004.jpg",
+    "images/sketches/paint005.JPG",
+    "images/sketches/paint006.jpg",
+    "images/sketches/paint007.JPG",
+    "images/sketches/paint008.jpeg",
+    "images/sketches/paint009.JPG",
+    "images/sketches/paint010.JPG",
+    "images/sketches/paint011.JPG",
+    "images/sketches/paint012.JPG"
   ]
 }
